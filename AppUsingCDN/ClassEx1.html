@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    
+    <title>class Example</title>
+</head> 
+<body>
+    <div id = "root"></div>
+   <script >
+    class Circle{
+        constructor(radius){
+            this.radius = radius;
+        }
+        area(){
+            document.write(("circle area "+(3.14*Math.pow((this.radius),2))));
+            
+           
+            }
+    }
+    class Cylinder extends Circle{
+        constructor(height,radius){
+            super(radius);
+            this.height = height;
+        }
+        area(){
+            super.area();
+            document.write("cylinder area "+(((2*3.14*this.radius*this.height)+(2*3.14*Math.pow((this.radius),2))))+' ');
+        }
+        volume(){
+            document.write("cylinder vol "+(((3.14*Math.pow((this.radius),2))*this.height)));
+        }
+    }
+    let obj = new Cylinder(3,7)
+    obj.area();
+    obj.volume();
+   </script>
+</body>
+</html>

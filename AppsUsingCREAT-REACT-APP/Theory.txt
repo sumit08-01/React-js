@@ -1,0 +1,64 @@
+First We are creating app using CDN(content delivery network)
+
+Now we are creating app using NPM(NODE Package manager)
+steps->
+
+1.) Install npm--
+2.) after install type in cmd (node -v ,then it give version of npm
+v16.15.1)
+3.)after that all are setup
+4.)Open folder where you want to create react app, and then type
+    (npx create-react-app appname)
+    npx is a npm package runner (x probably stands for eXecute).
+5.) after sometime its download all node modules then
+6.) start app by type (npm start)
+
+------------------------------------------
+Semantic versioning--
+2.3.5
+
+2->Major Feature(Something that breaks API or command)
+                (Includes version which breaks stuff. It can include removing APIs or changing names of functions so anything that works on v1.0.0 may not necessarily work on v2.0.0
+)
+3->Minor Feature(Something that does not breaks anything from older versions)
+                (Includes additions of functions or API which does not break anything from the older versions So anything that runs on v1.1.0 should work on v1.9.0 as well.
+)
+5->Bug Fixes(Bug fixes,Does not add remove feature)
+            (Includes bug fixes/documentation spelling mistakes etc.
+)
+-----------------------------------------
+Modify the defaults structure--
+
+favicon.ico
+logo192.png
+logo512.png
+App.css
+App.test.js
+logo.svg
+reportWebVitals.js
+setupTest.js
+
+DELETE ALL ABOVE FILES, this is not recommended for our app
+----------------------------------
+
+Now in App.js file DELETE code in div-tag
+---------------------------------------------------------
+
+
+--------------------------Material UI--------------------------------
+->First you install MUI on that folder with the following command
+with this-> [npm install @mui/material @emotion/react @emotion/styled]
+or else with this-> [yarn add @mui/material @emotion/react @emotion/styled]
+
+->For Icon mateiral run command -> [npm install @mui/icons-material] or [yarn add @mui/icons-material
+]
+
+-----------------------------------
+for date and time in material-UI first we install dateAndTime pakage-->> To run the command (npm add date-fns @date-io/date-fns)
+
+
+
+
+
+
+
